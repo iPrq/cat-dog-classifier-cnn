@@ -16,7 +16,7 @@ app.add_middleware(
 )
 
 # Load the brain you downloaded from Colab
-model = tf.keras.models.load_model('cat_dog_classifier.keras')
+model = tf.keras.models.load_model('cat_dog_classifier_1.keras')
 
 @app.post("/predict")
 async def predict(file: UploadFile = File(...)):
